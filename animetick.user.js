@@ -3,7 +3,7 @@
 // @namespace      https://twitter.com/sytkm
 // @description    link to official site in animetick
 // @include        http://animetick.net/anime/*
-// @version        "1.0"
+// @version        "1.1"
 // ==/UserScript==
 
 (function() {
@@ -16,5 +16,5 @@
     element.target="_blank";
     element.innerHTML = "Official Site";
     element.href = "http://www.google.com/search?btnI=I%27m+Feeling+Lucky&lr=lang_ja&ie=UTF-8&oe=UTF-8&q=" + objBody.children[0].innerHTML;
-    objBody.children[2].appendChild(element);
+    objBody.children[1].appendChild(element);
 })();
