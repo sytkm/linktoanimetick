@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Animetick Site Link
 // @namespace      https://twitter.com/sytkm
-// @description    link to official site in animetick
+// @description    this javascript makes link to the official website in animetick
 // @include        http://animetick.net/anime/*
 // @version        "1.1"
 // ==/UserScript==
