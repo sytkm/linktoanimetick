@@ -1,0 +1,11 @@
+{
+	"manifest_version":2,
+	"version":"1.1",
+	"name":"Animetick Site Link",
+	"content_scripts":[
+		{
+			"js":["animetick.user.js"],
+			"matches":["http://animetick.net/anime/*"]
+		}
+	]
+}
