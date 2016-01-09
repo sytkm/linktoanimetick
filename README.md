@@ -2,9 +2,14 @@
 Animetickで公式サイトへのリンクを作るUserScript
 
 ## Install
- 1.git cloneとかZIP Downloadとかしてこのファイルを入手
- 2.Chrome拡張機能画面の上部のデベロッパーモードにチェックを入れて、「パッケージ化されてない拡張機能を読み込む」をクリック
- 3.入手したフォルダを指定して選択
+### Chrome
+1. git cloneやZIP Downloadを行いファイルを入手
+1. Chrome拡張機能画面の上部のデベロッパーモードにチェックを入れて、「パッケージ化されてない拡張機能を読み込む」をクリック
+1. 入手したフォルダを指定して選択をクリック
+### Firefox
+1. UserScriptを扱うことができるようになるGreaseMonkeyをFirefoxのアドオンからインストール
+1. git cloneやZIP Downloadを行いファイルを入手
+1. 再起動後、animetick.user.jsをGreaseMonkeyにドラッグアンドドロップしてインストール
 
 ## Usage
  アニメ詳細画面に移動
