@@ -7,21 +7,24 @@
 // ==/UserScript==
 
 (function() {
-	var element = document.createElement('a');
+	var linkElem = document.createElement('a');
 	var tagElem = document.createElement('a');
-	var objBody = document.getElementsByClassName("anime-info-bottom")[0];
+	var linkBody = document.getElementsByClassName("anime-info-bottom")[0];
 	var tagBody = document.getElementsByClassName("hashtag")[0];
 	var hashtag = tagBody.innerHTML;
-	element.innerHTML = objBody.children[0].innerHTML;
-	element.href = "http://www.google.com/search?btnI=I%27m+Feeling+Lucky&lr=lang_ja&ie=UTF-8&oe=UTF-8&q=" + objBody.children[0].innerHTML;
-	element.style.textDecoration = "none";
-	element.style.color = "black";
+	linkElem.innerHTML = linkBody.children[0].innerHTML;
+	linkElem.href = "http://www.google.com/search?btnI=I%27m+Feeling+Lucky&lr=lang_ja&ie=UTF-8&oe=UTF-8&q=" + linkBody.children[0].innerHTML;
+	linkElem.style.textDecoration = "none";
+	linkElem.style.color = "black";
+	linkElem.target = "_blank";
 	tagElem.innerHTML = hashtag;
 	tagElem.href = "https://twitter.com/hashtag/"+ hashtag.trim().slice(1);
 	tagElem.style.textDecoration = "none";
 	tagElem.style.color = "black";
 
-	objBody.children[0].replaceChild(element,objBody.children[0].firstChild);
+	tagElem.target = "_blank";
+
+	linkBody.children[0].replaceChild(linkElem,linkBody.children[0].firstChild);
 	tagBody.replaceChild(tagElem,tagBody.firstChild);
 
 })();
