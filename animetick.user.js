@@ -10,7 +10,7 @@
 	var linkElem = document.createElement('a');
 	var tagElem = document.createElement('a');
 	var linkBody = document.getElementsByClassName("anime-info-bottom")[0];
-	var tagBody = document.getElementsByClassName("hashtag")[0];
+	var tagBody = document.getElementsByClassName("hashtag");
 	linkElem.innerHTML = linkBody.children[0].innerHTML;
 	linkElem.href = "http://www.google.com/search?btnI=I%27m+Feeling+Lucky&lr=lang_ja&ie=UTF-8&oe=UTF-8&q=" + linkBody.children[0].innerHTML;
 	linkElem.style.textDecoration = "none";
@@ -18,7 +18,7 @@
 	linkElem.target = "_blank";
 	linkBody.children[0].replaceChild(linkElem,linkBody.children[0].firstChild);
 	if(tagBody.length!=0){
-		var hashtag = tagBody.innerHTML;
+		var hashtag = tagBody[0].innerHTML;
 		tagElem.innerHTML = hashtag;
 		tagElem.href = "https://twitter.com/hashtag/"+ hashtag.trim().slice(1);
 		tagElem.style.textDecoration = "none";
