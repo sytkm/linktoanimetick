@@ -1,6 +1,9 @@
 # Animetick Site Link
 Animetickで公式サイトへのリンクを作るUserScript
 
+# Version
+1.2.1
+
 ## Install
 ### Chrome
 1. git cloneやZIP Downloadを行いファイルを入手
@@ -16,4 +19,4 @@ Animetickで公式サイトへのリンクを作るUserScript
 1. アニメ詳細画面に移動
 1. タイトルやハッシュタグをクリック
 	1. タイトルをクリックで公式サイトを新規タブで開く
-	1. ハッシュタグをクリックでそのタグのTwitterでの検索結果を新規タブで開く
+	1. ハッシュタグがある場合、ハッシュタグをクリックでそのタグのTwitterでの検索結果を新規タブで開く
